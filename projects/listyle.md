@@ -8,9 +8,11 @@ published: true
 labels:
   - Objective-C
   - Xcode
+  - Core Data
+  - iOS Development
   - Photoshop
   - Illustrator
-summary: "iOS application."
+summary: "A simple todo-list iOS application."
 ---
 
 <img class="img-fluid" src="../img/vacay/vacay-home-page.png">
