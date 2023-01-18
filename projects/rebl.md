@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: img/projects/rebl/rebl_logo.png
+image: img/projects/rebl/rebl_logo.jpg
 title: "Rebl"
 date: 2015
 published: true
@@ -15,7 +15,7 @@ labels:
 summary: "A simple digital detox iOS application."
 ---
 
-<img class="img-fluid" src="../img/projects/listyle/Rebl_AdobeExpress.gif">
+<img class="img-fluid" src="../img/projects/rebl/Rebl_AdobeExpress.gif">
 
 Vacay is a web application that I helped create as a team project in ICS 415, Spring 2015. The project helped me learn how to design and implement a responsive web site.
 
