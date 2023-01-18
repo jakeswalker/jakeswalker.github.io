@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: img/projects/RWD/RWD_logo.jpg
+image: img/projects/RWD/RWD_logo.png
 title: "Responsive Web Design"
 date: 2015
 published: true
