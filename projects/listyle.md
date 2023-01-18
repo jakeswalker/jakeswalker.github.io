@@ -12,7 +12,7 @@ labels:
   - iOS Development
   - Photoshop
   - Illustrator
-summary: "A simple todo-list iOS application."
+summary: "A todo-list iOS application."
 ---
 <div class="text-center p-4">
 	<video class="listyleVid" width="250" height="533" poster="../img/projects/listyle/Listyle_Frame.png" autoplay loop muted webkit-playsinline>
