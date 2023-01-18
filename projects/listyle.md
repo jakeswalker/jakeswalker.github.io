@@ -14,12 +14,13 @@ labels:
   - Illustrator
 summary: "A simple todo-list iOS application."
 ---
-
-<video class="listyleVid" width="344" height="734" poster="../img/projects/listyle/Listyle_Frame.png" autoplay loop muted webkit-playsinline>
-  <source src="../img/projects/listyle/Listyle.mp4" type="video/mp4">
-	Your browser does not support html5.
-</video>
-
+<div class="text-center p-4">
+	<video class="listyleVid" width="250" height="533" poster="../img/projects/listyle/Listyle_Frame.png" autoplay loop muted webkit-playsinline>
+  		<source src="../img/projects/listyle/Listyle.mp4" type="video/mp4">
+		Your browser does not support html5.
+	</video>
+</div>
+	
 Vacay is a web application that I helped create as a team project in ICS 415, Spring 2015. The project helped me learn how to design and implement a responsive web site.
 
 Vacay is implemented using [Meteor](http://meteor.com), a JavaScript application platform. Within two weeks, we created a website that implements several types of reservations including flights, hotels, and car rentals.
