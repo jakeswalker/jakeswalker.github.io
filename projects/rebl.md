@@ -11,7 +11,7 @@ labels:
   - iOS Development
   - Photoshop
   - Illustrator
-summary: "A simple digital detox iOS application."
+summary: "A digital detox iOS application."
 ---
 
 <div class="text-center p-4">
