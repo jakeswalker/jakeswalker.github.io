@@ -8,14 +8,18 @@ published: true
 labels:
   - Objective-C
   - Xcode
-  - Core Data
   - iOS Development
   - Photoshop
   - Illustrator
 summary: "A simple digital detox iOS application."
 ---
 
-<img class="img-fluid" src="../img/projects/rebl/Rebl_AdobeExpress.gif">
+<div class="text-center p-4">
+	<video class="reblVid" width="250" height="533" poster="../img/projects/rebl/Rebl_Frame.png" autoplay loop muted webkit-playsinline>
+  		<source src="../img/projects/rebl/Rebl.mp4" type="video/mp4">
+		Your browser does not support html5.
+	</video>
+</div>
 
 Vacay is a web application that I helped create as a team project in ICS 415, Spring 2015. The project helped me learn how to design and implement a responsive web site.
 
