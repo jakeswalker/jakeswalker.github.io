@@ -21,11 +21,11 @@
   "skills": [
     {
       "name": "Languages and Frameworks",
-      "keywords": [ "HTML", "CSS", "Javascript", "Java", "C", "C++", "Objective-C" ]
+      "keywords": [ "HTML", "CSS", "Javascript", "jQuery", "Java", "C", "C++", "Objective-C" ]
     },
     {
       "name": "Toolsets/OS",
-      "keywords": [ "MacOS", "Ubuntu", "Git/GitHub" ]
+      "keywords": [ "Windows", "MacOS", "Virtual Box", "Ubuntu", "Git/GitHub", "Xcode", "Photoshop", "Illustrator", "GIMP" ]
     }
   ],
   "education": [
@@ -33,77 +33,46 @@
       "institution": "University of Hawaii, Honolulu, HI",
       "area": "Mathematics and Computer Science (expected Spring, 2024)",
       "studyType": "B.S.",
-      "startDate": "2013-09-01",
+      "startDate": "2021-01-11",
       "endDate": "Present",
       "courses": [
+        "ICS 111 - Introduction to Computer Science I (Java)",
+        "ICS 211 - Introduction to Computer Science II (Java)",
+        "ICS 212 - Program Structure (C++)",
+        "ICS 311 - Algorithms",
+        "MATH 307 - Linear Algebra and Differential Equations", 
+        "MATH 321 - Introduction to Advanced Mathematics",
+        "MATH 372 - Elementary Probability and Statistics",
+        "MATH 407 - Numerical Analysis"
       ]
     }
   ],
   "work": [
     {
-      "company": "UH Manoa Board of Publications",
-      "position": "Web Developer",
+      "company": "",
+      "position": "",
       "website": "",
-      "startDate": "2015-08-01",
-      "endDate": "Present",
-      "summary": "Head of online presence for Ka Leo",
-      "highlights": [
-        "Maintain, update, and oversee official college newspaper website",
-        "Drive, design and build student-community projects for UH Manoa"
-      ]
-    },
-    {
-      "company": "UH Information Technology Services",
-      "position": "Help Desk Consultant",
-      "website": "http://www.hawaii.edu/its/",
-      "startDate": "2015-01-01",
-      "endDate": "2016-03-15",
-      "summary": "",
-      "highlights": [
-        "Troubleshoot software, hardware and networking issues over the phone",
-        "Answer phone and email responses to the ITS Help Desk"
-      ]
-    }
-  ],
-  "volunteer": [
-    {
-      "organization": "Center for Renewable Energy and Island Sustainability",
-      "website": "http://manoa.hawaii.edu/reis",
-      "position": "Software Developer",
-      "startDate": "2016-01-01",
-      "endDate": "Present",
-      "summary": "Lead developer for weather sensing project",
-      "highlights": [
-        "Design firmware for distributed weather sensor network",
-        "Maintain custom data collection and storage infrastructure"
-      ]
-    },
-    {
-      "organization": "",
-      "website": "",
-      "position": "Professional organization involvement",
       "startDate": "",
       "endDate": "",
       "summary": "",
       "highlights": [
-        "Chair, ACM Manoa, 2016-Present",
-        "Member, IEEE Student Branch, 2014-Present",
-        "Webmaster/IT Officer, IEEE Student Branch, UH Manoa, 2012-2013"
+        "",
+        ""
       ]
     }
   ],
   "awards": [
     {
-      "title": "B+ Scholarship",
-      "date": "2013-Present",
-      "awarder": "State of Hawaii",
-      "summary": "Scholarships awarded to incoming freshmen and continuing students who complete a rigorous high school curriculum with a minimum overall GPA of 3.0 at a Hawai'i public school."
+      "title": "S-STEM Scholarship",
+      "date": "2020-2021",
+      "awarder": "National Science Foundation",
+      "summary": "A grant-funded program sponsored by the National Science Foundation that will award scholarships to academically talented students."
     },
     {
-      "title": "First place",
-      "date": "2015",
-      "awarder": "University of Hawaii Micromouse Competition",
-      "summary": "My team won first place in 2015.  See my portfolio site for more details."
+      "title": "UHM CC Transfer Merit Award",
+      "date": "2021-2022",
+      "awarder": "University of Hawaii",
+      "summary": "Scholarships awarded to incoming transfer students with a minimum overall GPA of 3.0 at University of Hawai'i Community College."
     }
   ],
   "references": [
