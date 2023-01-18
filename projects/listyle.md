@@ -15,7 +15,10 @@ labels:
 summary: "A simple todo-list iOS application."
 ---
 
-<img class="img-fluid" src="../img/projects/listyle/Listyle_AdobeExpress.gif">
+<video class="listyleVid" width="344" height="734" poster="../img/projects/listyle/Listyle_Frame.png" autoplay loop muted webkit-playsinline>
+  <source src="../img/projects/listyle/Listyle.mp4" type="video/mp4">
+	Your browser does not support html5.
+</video>
 
 Vacay is a web application that I helped create as a team project in ICS 415, Spring 2015. The project helped me learn how to design and implement a responsive web site.
 
