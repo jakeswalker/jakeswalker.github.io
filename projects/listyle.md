@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: img/projects/listyle/Listyle_AdobeExpress.gif
+image: img/projects/listyle/listyle_logo.png
 title: "Listyle"
 date: 2015
 published: true
