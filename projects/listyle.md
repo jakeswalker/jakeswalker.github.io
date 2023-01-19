@@ -11,7 +11,7 @@ labels:
   - Core Data
   - iOS Development
   - Illustrator
-summary: "A todo-list iOS application."
+summary: "A iOS todo-list application."
 ---
 <div class="text-center p-4">
 	<video class="listyleVid" width="250" height="533" poster="../img/projects/listyle/Listyle_Frame.png" autoplay loop muted webkit-playsinline>
@@ -20,6 +20,4 @@ summary: "A todo-list iOS application."
 	</video>
 </div>
 	
-An iOS to-do list application designed to make organizing tasks fun and easy by using shapes and colors.
-
-I learned Objective-C and extensively used Xcode throughout development.
+An iOS to-do list application designed to make organizing tasks fun and easy by using shapes and colors. I extensively used Objective-C, Core Data, and Xcode throughout the development.
