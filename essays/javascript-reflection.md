@@ -22,8 +22,4 @@ I started programming because I was always interested in starting a business of 
 ## Powerful tools
 Through the book I was also able to learn how to use jQuery, a JavaScript library. jQuery allowed me add animations on websites with only a few lines of code. Through this, I learned that one of the advantages of using JavaScript is that there are countless frameworks and libraries that will make programming a lot easier and more powerful, especially because JavaScript is so widely adopted. There are other frameworks  that I came across around this time that I was interested in called p5.js which assists in making generative artworks with JavaScript. Although I did not learn how to use p5.js, it was exciting to see artists make stunning digital artworks using JavaScript.
 
-## What I can improve
-In this weeks module, 
-
-## Conclusion
 It is undeniable that JavaScript is an essential programming language in modern technology, particularly the Internet. Due to above reasons, I feel comfortable in mastering JavaScript as one of my primary programming languages for software engineering.
