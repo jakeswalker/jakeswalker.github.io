@@ -10,8 +10,10 @@ labels:
   - Xcode
   - iOS Development
   - Illustrator
-summary: "An iOS application designed to help people manage social media usage."
+summary: "An iOS application designed to manage social media usage."
 ---
+
+An iOS application that I designed, programmed, and deployed using Illustrator, Objective-C, and Xcode. It is desinged to help people, including myself, reduce the amount of time spent on social media app.
 
 <div class="text-center p-4">
 	<video class="reblVid" width="250" height="533" poster="../img/projects/rebl/Rebl_Frame.png" autoplay loop muted webkit-playsinline>
@@ -19,8 +21,6 @@ summary: "An iOS application designed to help people manage social media usage."
 		Your browser does not support html5.
 	</video>
 </div>
-
-An iOS application designed to help people manage social media usage.
 
 ## Background
 
