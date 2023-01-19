@@ -13,11 +13,12 @@ labels:
   - Illustrator
 summary: "An iOS todo-list application."
 ---
+
+An iOS application that I designed, programmed, and deployed using Illustrator, Objective-C, Core Data, and Xcode. It is designed to make organizing tasks fun and easy by using shapes and colors.
+
 <div class="text-center p-4">
 	<video class="listyleVid" width="250" height="533" poster="../img/projects/listyle/Listyle_Frame.png" autoplay loop muted webkit-playsinline>
   		<source src="../img/projects/listyle/Listyle.mp4" type="video/mp4">
 		Your browser does not support html5.
 	</video>
 </div>
-	
-An iOS to-do list app designed to make organizing tasks fun and easy by using shapes and colors. I extensively used Objective-C, Core Data, and Xcode throughout the development.
