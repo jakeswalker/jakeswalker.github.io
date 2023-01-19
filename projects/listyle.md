@@ -23,13 +23,13 @@ An iOS application that I designed, programmed, and deployed using Illustrator, 
 	</video>
 </div>
 
-Key features:
+## Key features:
 <ul>
   <li>Setting reminders for tasks</li>
   <li>Organizing tasks into Today and Week lists</li>
   <li>Dragging tasks to reorder</li>
-  <li>Swiping tasks to complete or delete tasks</li>
+  <li>Swiping tasks to complete or delete</li>
   <li>Searching items on popular websites such as Google, Yahoo, Amazon, etc.</li>
 </ul>
 
-This app received a couple thousands downloads from around the world and was featured by app bloggers.
+The app received a couple thousand downloads from around the world and was featured by app bloggers.
