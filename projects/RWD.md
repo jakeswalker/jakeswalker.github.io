@@ -10,12 +10,17 @@ labels:
   - CSS
   - JavaScript
   - jQuery
-summary: "Web designs for responsive websites."
+summary: "Demonstration of responsive websites that are compatible on all deviced."
 ---
 
-<div class="text-center p-4">
-  <img width="376px" src="../img/projects/RWD/browser.png" class="img-thumbnail" >
-  <img width="200px" src="../img/projects/RWD/mobile.png" class="img-thumbnail" >
-</div>\
+Responsive websites that are compatible on all deviced that I designed using HTML, CSS, JavaScript, and jQuery.
 
-Responsive web design demonstrations using HTML, CSS, JavaScript, and jQuery.
+<div class="text-center p-17">
+  <img width="376px" src="../img/projects/RWD/browser.png" class="img-thumbnail" >
+</div>
+<div class="text-center p-17">
+  <img width="376px" src="../img/projects/RWD/browser.png" class="img-thumbnail" >
+</div>
+<div class="text-center p-17">
+  <img width="376px" src="../img/projects/RWD/browser.png" class="img-thumbnail" >
+</div>
