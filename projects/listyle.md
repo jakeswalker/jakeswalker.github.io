@@ -23,7 +23,7 @@ An iOS application that I designed, programmed, and deployed using Illustrator, 
 	</video>
 </div>
 
-## Key features:
+## Key features
 <ul>
   <li>Setting reminders for tasks</li>
   <li>Organizing tasks into Today and Week lists</li>
