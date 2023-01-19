@@ -22,7 +22,7 @@ summary: "Web designs for responsive websites."
   		<source src="../img/projects/RWD/ImageSlider.mp4" type="video/mp4">
 		Your browser does not support html5.
 	</video>
-  <video class="RWDVid" width="250" height="533" poster="../img/projects/RWD/TabPanels.mp4" autoplay loop muted webkit-playsinline>
+  <video class="RWDVid" width="200" height="427" poster="../img/projects/RWD/TabPanels.mp4" autoplay loop muted webkit-playsinline>
   		<source src="../img/projects/RWD/TabPanels.mp4" type="video/mp4">
 		Your browser does not support html5.
 	</video>
