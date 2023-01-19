@@ -2,16 +2,15 @@
 layout: project
 type: project
 image: img/projects/rebl/rebl_logo.jpg
-title: "Rebl"
+title: "Rebl: Look Around"
 date: 2015
 published: true
 labels:
   - Objective-C
   - Xcode
   - iOS Development
-  - Photoshop
   - Illustrator
-summary: "A digital detox iOS application."
+summary: "An iOS digital detox application."
 ---
 
 <div class="text-center p-4">
@@ -21,14 +20,6 @@ summary: "A digital detox iOS application."
 	</video>
 </div>
 
-Vacay is a web application that I helped create as a team project in ICS 415, Spring 2015. The project helped me learn how to design and implement a responsive web site.
+I decided to make an iOS app that will help people “digital detox.” But looking back, I believe I was making the app to help myself from the social media addiction. My app’s concept was to break the habit of picking up the phone subconsciously to check social media. You can set a specific time to check the social media and set it to send a notification at that time. You would also place the app next to the social media apps on the home screen, so that if you pick up a phone subconsciously to check social media, you would open my app instead, which will only show a count down until the time you are allowed to check social media. This was the most I was able to do being a third-party app, but it helped me break the habit and it allowed me control the use of social media. About a couple months later, I stopped using social media altogether. And since there were couple thousands downloads from all around the world, I am hoping it helped some of the people who downloaded it as well. 
 
-Vacay is implemented using [Meteor](http://meteor.com), a JavaScript application platform. Within two weeks, we created a website that implements several types of reservations including flights, hotels, and car rentals.
-
-In this project I gained experience with full-stack web application design and associated technologies, including [MongoDB](http://mongodb.com) for database storage, the [Twitter Bootstrap](http://getbootstrap.com/) CSS Framework for the user interface, and Javascript for both client and server-side programming. 
-
-Here is some example code to illustrate Simple Schema use:
-
-{% gist 9defa1fb3f4eb593ba5fa9eacedca960 %}
- 
-Source: <a href="https://github.com/theVacay/vacay">theVacay/vacay</a>
+I extensively used Objective-C and Xcode throughout the development.
