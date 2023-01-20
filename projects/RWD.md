@@ -10,26 +10,25 @@ labels:
   - CSS
   - JavaScript
   - jQuery
-summary: "Demonstration of responsive websites that are compatible on all deviced."
+summary: "A demonstration of responsive websites that are compatible on all deviced."
 ---
 
-Responsive websites that are compatible on all deviced that I designed using HTML, CSS, JavaScript, and jQuery.
+A demonstration of responsive websites that are compatible on all devices which I designed using HTML, CSS, JavaScript, and jQuery.
 
 <div class="text-center p-4">
-    <img width="376px" src="../img/projects/RWD/browser.png" class="img-thumbnail" >
-    <img width="376px" src="../img/projects/RWD/browser.png" class="img-thumbnail" >
-    <img width="376px" src="../img/projects/RWD/browser.png" class="img-thumbnail" >
+    <img width="376px" src="../img/projects/RWD/ResponsiveSquareGrid _D_Frame.jpg" class="img-thumbnail" >
+    <img width="376px" src="../img/projects/RWD/ImageSlider _D_Frame.jpg" class="img-thumbnail" >
+    <img width="376px" src="../img/projects/RWD/HorizontalToggleMenu _D_Frame.jpg" class="img-thumbnail" >
 </div>
 
 ## Try it out!
 
-Click on the links below to view the responsive web designs:
+Click on the links below to view the responsive web designs on browser:
 <ul>
     <li>Accordion</li>
     <li>Fixed cover</li>
     <li>Horizontal toggle-menu</li>
     <li>Image slider</li>
-    <li></li>
     <li>Modal window</li>
     <li>Responsive grid</li>
     <li>Responsive square-grid</li>
