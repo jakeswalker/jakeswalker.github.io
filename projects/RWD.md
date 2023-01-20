@@ -25,14 +25,14 @@ A demonstration of responsive websites I designed using HTML, CSS, JavaScript, a
 
 Click on the links below to view the responsive web designs on your browser:
 <ul>
-    <li>Accordion</li>
-    <li>Fixed cover</li>
-    <li>Horizontal toggle-menu</li>
-    <li>Image slider</li>
-    <li>Modal window</li>
-    <li>Responsive grid</li>
-    <li>Responsive square-grid</li>
-    <li>Scroll-to-hide navigation bar</li>
-    <li>Tab-panels</li>
-    <li>Vertical toggle-menu</li>
+    <li>[Accordion](https://jakeswalker.github.io/projects/RWD/accordion/index.html)</li>
+    <li>[Fixed cover](https://jakeswalker.github.io/projects/RWD/fixed-cover-image/index.html)</li>
+    <li>[Horizontal toggle-menu](https://jakeswalker.github.io/projects/RWD/horizontal-toggle-menu/index.html)</li>
+    <li>[Image slider](https://jakeswalker.github.io/projects/RWD/image-slider/index.html)</li>
+    <li>[Modal window](https://jakeswalker.github.io/projects/RWD/modal-window/index.html)</li>
+    <li>[Responsive grid](https://jakeswalker.github.io/projects/RWD/responsive-grid/index.html)</li>
+    <li>[Responsive square-grid](https://jakeswalker.github.io/projects/RWD/responsive-square-grid/index.html)</li>
+    <li>[Scroll-to-hide navigation bar](https://jakeswalker.github.io/projects/RWD/scroll-hide-nav/index.html)</li>
+    <li>[Tab-panels](https://jakeswalker.github.io/projects/RWD/tab-panels/index.html)</li>
+    <li>[Vertical toggle-menu](https://jakeswalker.github.io/projects/RWD/vertical-toggle-menu/index.html)</li>
 </ul>
