@@ -25,15 +25,12 @@ A demonstration of responsive websites I designed using HTML, CSS, JavaScript, a
 
 Click on the links below to view the responsive web designs on your browser:
 - [Accordion](https://jakeswalker.github.io/projects/RWD/accordion/index.html)
-<ul>
-    <li>[Accordion](https://jakeswalker.github.io/projects/RWD/accordion/index.html)</li>
-    <li>[Fixed cover](https://jakeswalker.github.io/projects/RWD/fixed-cover-image/index.html)</li>
-    <li>[Horizontal toggle-menu](https://jakeswalker.github.io/projects/RWD/horizontal-toggle-menu/index.html)</li>
-    <li>[Image slider](https://jakeswalker.github.io/projects/RWD/image-slider/index.html)</li>
-    <li>[Modal window](https://jakeswalker.github.io/projects/RWD/modal-window/index.html)</li>
-    <li>[Responsive grid](https://jakeswalker.github.io/projects/RWD/responsive-grid/index.html)</li>
-    <li>[Responsive square-grid](https://jakeswalker.github.io/projects/RWD/responsive-square-grid/index.html)</li>
-    <li>[Scroll-to-hide navigation bar](https://jakeswalker.github.io/projects/RWD/scroll-hide-nav/index.html)</li>
-    <li>[Tab-panels](https://jakeswalker.github.io/projects/RWD/tab-panels/index.html)</li>
-    <li>[Vertical toggle-menu](https://jakeswalker.github.io/projects/RWD/vertical-toggle-menu/index.html)</li>
-</ul>
+- [Fixed cover](https://jakeswalker.github.io/projects/RWD/fixed-cover-image/index.html)
+- [Horizontal toggle-menu](https://jakeswalker.github.io/projects/RWD/horizontal-toggle-menu/index.html)
+- [Image slider](https://jakeswalker.github.io/projects/RWD/image-slider/index.html)
+- [Modal window](https://jakeswalker.github.io/projects/RWD/modal-window/index.html)
+- [Responsive grid](https://jakeswalker.github.io/projects/RWD/responsive-grid/index.html)
+- [Responsive square-grid](https://jakeswalker.github.io/projects/RWD/responsive-square-grid/index.html)
+- [Scroll-to-hide navigation bar](https://jakeswalker.github.io/projects/RWD/scroll-hide-nav/index.html)
+- [Tab-panels](https://jakeswalker.github.io/projects/RWD/tab-panels/index.html)
+- [Vertical toggle-menu](https://jakeswalker.github.io/projects/RWD/vertical-toggle-menu/index.html)
