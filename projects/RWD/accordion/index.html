@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="UTF-8" />
+	<meta name="author" content="jwalkar.com" />
+	<meta name="description" content="demonstration of desktop and mobile friendly website" />
+	<meta name="keywords" content="responsive, degital, generative, computational, design, graphic, art, web, app, iOS, developer" />
+	<link rel="shortcut icon" type="image/png" href="/favicon.png" />
+	<title>J Walkar - Accordion</title>
+
+	<link href='https://fonts.googleapis.com/css?family=Monda' rel='stylesheet' type='text/css'>
+	<link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+	<style type="text/css">
+
+	body {
+		margin: 0px;
+		font-family: 'Monda', sans-serif;
+	}
+	.accordionWrapper {
+		margin-top: calc(100vh / 10);
+		margin-bottom: calc(100vh / 10);
+		margin-left: auto;
+		margin-right: auto;
+		width: 500px;
+		background-color: hsla(250,100%,75%,1.0);
+	}
+	.accordion {
+		margin: 0px;
+		padding: 0px;
+		list-style-type: none;
+	}
+	.accordionButton {
+		width: 100%;
+		height: 65px;
+		background-color: white;
+		border: 1px solid black;
+		border-bottom-width: 0px;
+		outline: none;
+	}
+	.accordionButton h2 {
+		display: inline-block;
+		margin: 0px;
+		font-family: 'Monda', sans-serif;
+		line-height: 65px;
+	}
+	.accordionButton .fa {
+		float: right;
+		margin-right: 10px;
+		line-height: 65px;
+	}
+	.accordionPanel {
+		display: none;
+	}
+	.lastAccordion .accordionPanel {
+		display: block;
+	}
+	.accordionPanel p {
+		margin: 0px;
+		padding: 30px 40px 30px 40px;
+		color: white;
+	}
+
+	@media(max-width: 600px){
+
+		.accordionWrapper {
+			width: 300px;
+		}
+	}
+		
+	</style>
+
+</head>
+
+<body>
+
+	<div class="accordionWrapper">
+		<ul class="accordion">
+			<li>
+				<button class="accordionButton"><h2>Accordion 1</h2><i class="fa fa-chevron-down fa-lg" aria-hidden="true"></i></button>
+				<div class="accordionPanel">
+					<p>Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod 	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 	nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 	fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</p>
+				</div>
+			</li>
+			<li>
+				<button class="accordionButton"><h2>Accordion 2</h2><i class="fa fa-chevron-down fa-lg" aria-hidden="true"></i></button>
+				<div class="accordionPanel">
+					<p>Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod 	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 	nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 	fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</p>
+				</div>
+			</li>
+			<li class="lastAccordion">
+				<button class="accordionButton"><h2>Accordion 3</h2><i class="fa fa-chevron-up fa-lg" aria-hidden="true"></i></button>
+				<div class="accordionPanel">
+					<p>Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod 	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 	nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 	fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</p>
+				</div>
+			</li>
+		</ul>
+	</div>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	
+	<script type="text/javascript">
+
+	$('.accordionButton').on('click', function(e){
+		e.preventDefault();
+
+		var $accordionButton = $(this);
+		var $accordionPanel = $accordionButton.next('.accordionPanel');
+		var $arrow = $accordionButton.find('.fa')
+		var $parent = $accordionPanel.parent('li');
+
+		// change arrow
+		if (!$accordionPanel.is(':animated')) {
+			if ($accordionPanel.is(':hidden')) {
+				$arrow.removeClass('fa-chevron-down');
+				$arrow.addClass('fa-chevron-up')
+			}
+			else {
+				$arrow.removeClass('fa-chevron-up');
+				$arrow.addClass('fa-chevron-down')
+			}
+		}
+
+		// remove bottom border
+		if ($accordionPanel.is(':hidden') && $parent.hasClass('lastAccordion')) {
+			$accordionButton.css("border-bottom-width", "0px");
+		}
+
+		// animate accordionPanel
+		$accordionPanel
+			.not(':animated')
+			.slideToggle(200, function(){
+
+				// add bottom border
+				if ($accordionPanel.is(':hidden') && $parent.hasClass('lastAccordion')) {
+					$accordionButton.css("border-bottom-width", "1px");
+				}
+			});
+	});
+
+	</script>
+
+</body>
+
+</html>
