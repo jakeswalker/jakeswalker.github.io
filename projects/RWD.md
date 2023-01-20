@@ -24,6 +24,7 @@ A demonstration of responsive websites I designed using HTML, CSS, JavaScript, a
 ## Try it out!
 
 Click on the links below to view the responsive web designs on your browser:
+- [Accordion](https://jakeswalker.github.io/projects/RWD/accordion/index.html)
 <ul>
     <li>[Accordion](https://jakeswalker.github.io/projects/RWD/accordion/index.html)</li>
     <li>[Fixed cover](https://jakeswalker.github.io/projects/RWD/fixed-cover-image/index.html)</li>
