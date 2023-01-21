@@ -16,9 +16,9 @@ summary: "A demonstration of responsive web designs that are compatible on all d
 A demonstration of responsive websites I designed using HTML, CSS, JavaScript, and jQuery that are compatible on all devices.
 
 <div class="text-center p-4">
-      <img width="385px" src="../img/projects/RWD/HorizontalToggleMenu _D_Frame.png" class="img-thumbnail" >
-      <img width="385px" src="../img/projects/RWD/ImageSlider _D_Frame.png" class="img-thumbnail" >
-      <img width="385px" src="../img/projects/RWD/ResponsiveSquareGrid _D_Frame.png" class="img-thumbnail" >
+      <img width="385px" src="../img/projects/RWD/HorizontalToggleMenu _D_Frame.png" class="img-fluid" >
+      <img width="385px" src="../img/projects/RWD/ImageSlider _D_Frame.png" class="img-fluid" >
+      <img width="385px" src="../img/projects/RWD/ResponsiveSquareGrid _D_Frame.png" class="img-fluid" >
 </div>
 
 ## Try it out!
