@@ -10,7 +10,7 @@ labels:
   - CSS
   - JavaScript
   - jQuery
-summary: "A demonstration of responsive web designs that are compatible on all deviced."
+summary: "A demonstration of responsive web designs that are compatible on all devices."
 ---
 
 A demonstration of responsive websites I designed using HTML, CSS, JavaScript, and jQuery that are compatible on all devices.
