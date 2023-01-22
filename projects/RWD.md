@@ -13,7 +13,7 @@ labels:
 summary: "A demonstration of responsive web designs that are compatible on all devices."
 ---
 
-A demonstration of responsive websites I designed using HTML, CSS, JavaScript, and jQuery that are compatible on all devices.
+A demonstration of responsive websites I designed that are compatible on all devices using HTML, CSS, JavaScript, and jQuery.
 
 <div class="text-center p-4">
       <img width="385px" src="../img/projects/RWD/HorizontalToggleMenu _D_Frame.png" class="img-fluid" >
