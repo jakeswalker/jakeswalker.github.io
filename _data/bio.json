@@ -25,7 +25,7 @@
     },
     {
       "name": "Toolsets/OS",
-      "keywords": [ "Windows", "MacOS", "Virtual Box", "Ubuntu", "Git/GitHub", "Xcode", "Photoshop", "Illustrator", "GIMP" ]
+      "keywords": [ "Windows", "MacOS", "Ubuntu", "Git/GitHub", "Xcode", "Photoshop", "Illustrator", "GIMP", "LaTex" ]
     }
   ],
   "education": [
