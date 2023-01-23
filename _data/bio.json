@@ -25,7 +25,7 @@
     },
     {
       "name": "Toolsets/OS",
-      "keywords": [ "Windows", "MacOS", "Ubuntu", "Git/GitHub", "Xcode", "Photoshop", "Illustrator", "GIMP", "LaTex" ]
+      "keywords": [ "Windows", "macOS", "Ubuntu", "Git/GitHub", "Xcode", "Photoshop", "Illustrator", "GIMP", "LaTex" ]
     }
   ],
   "education": [
