@@ -1,7 +1,7 @@
 ---
 layout: essay
 type: essay
-title: "The Internet's Programming Language"
+title: "There Is Such a Thing As a Smart Question"
 # All dates must be YYYY-MM-DD format!
 date: 2023-01-26
 published: true
