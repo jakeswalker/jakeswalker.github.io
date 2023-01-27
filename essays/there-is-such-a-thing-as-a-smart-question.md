@@ -3,7 +3,7 @@ layout: essay
 type: essay
 title: "The Internet's Programming Language"
 # All dates must be YYYY-MM-DD format!
-date: 2023-01-18
+date: 2023-01-26
 published: true
 labels:
   - JavaScript
@@ -20,8 +20,8 @@ In the essay How to Ask Questions the Smart Way, Raymond establishes precepts th
 
 ## An example of a smart question
 
-To demonstrate some of those techniques, here is an example of a Stack Overflow post by a relatively new user that asks the question the smart way. The user starts the question with the subject header "Cannot retrieve current state inside async function in React.js"; the header clearly states that the user is having an issue with an async function in React.js. The user also includes appropriate tags, such as "javascript" and "reactjs," which  makes it more likely for experts in JavaScript and React.js to find the question. The user then explains every steps that have been attempted and gives detailed explanation of what the issue is. The user then embeds the code in the question and finishes the question by thanking the community in advance. The question receives an answer within 20 minutes of posting which solved the user's issue. 
+To demonstrate some of those techniques, here is an [example](https://stackoverflow.com/questions/75253140/cannot-retrieve-current-state-inside-async-function-in-react-js) of a Stack Overflow post by a relatively new user that asks the question the smart way. The user starts the question with the subject header "Cannot retrieve current state inside async function in React.js"; the header clearly states that the user is having an issue with an async function in React.js. The user also includes appropriate tags, such as "javascript" and "reactjs," which  makes it more likely for experts in JavaScript and React.js to find the question. The user then explains every steps that have been attempted and gives detailed explanation of what the issue is. The user then embeds the code in the question and finishes the question by thanking the community in advance. The question receives an answer within 20 minutes of posting which solved the user's issue. 
 
-To demonstrate the not-so-smart question, here is another example from the Stack Overflow. The user starts the question with the subject header "Download File from AWS s3 Bucket to Local using s3.getObject"; it does not clearly state what the issue is and only state what the user is attempting to do. The user then embeds the code and provide a single sentence of what the code is attempting to do. The question receives a downvote and did not receive any answers.
+To demonstrate the not-so-smart question, here is another [example](https://stackoverflow.com/questions/75253171/download-file-from-aws-s3-bucket-to-local-using-s3-getobject) from the Stack Overflow. The user starts the question with the subject header "Download File from AWS s3 Bucket to Local using s3.getObject"; it does not clearly state what the issue is and only state what the user is attempting to do. The user then embeds the code and provide a single sentence of what the code is attempting to do. The question receives a downvote and did not receive any answers.
 
 As demonstrated in the above examples, asking smart questions can greatly increase the chance of getting an answer promptly from a qualified expert. By following the techniques provided by Raymond, that is, by searching the Web prior to asking question and by asking a well formulated, courteous, and sincere question, software engineers will be able to communicate effectively to solve difficult problems through the help of a community.
