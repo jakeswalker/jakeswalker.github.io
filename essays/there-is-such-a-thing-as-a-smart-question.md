@@ -6,7 +6,9 @@ title: "The Internet's Programming Language"
 date: 2023-01-26
 published: true
 labels:
-  - JavaScript
+  - Questions
+  - Answers
+  - StackOverflow
 ---
 
 <img width="350px" class="rounded float-start pe-4" src="../img/essays/smart-questions.png">
