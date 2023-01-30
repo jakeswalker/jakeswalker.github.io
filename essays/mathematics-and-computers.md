@@ -12,7 +12,7 @@ labels:
   - Career
 ---
 
-<img width="430px" class="rounded float-start pe-4" src="../img/essays/alan-turing.png">
+<img width="500px" class="rounded float-start pe-4" src="../img/essays/alan-turing.png">
 
 ## How I ended up here
 
