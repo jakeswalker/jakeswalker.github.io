@@ -14,9 +14,10 @@
     ]
   },
   "interests": [
+    { "name": "Blockchain" },
+    { "name": "Mobile App Development" },
     { "name": "Operating Systems" },
-    { "name": "Cryptography" },
-    { "name": "Blockchain" }
+    { "name": "Mathematics" }
   ],
   "skills": [
     {
