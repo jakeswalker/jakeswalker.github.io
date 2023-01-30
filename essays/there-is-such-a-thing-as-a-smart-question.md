@@ -11,7 +11,7 @@ labels:
   - StackOverflow
 ---
 
-<img width="350px" class="rounded float-start pe-4" src="../img/essays/smart-questions.png">
+<img width="410px" class="rounded float-start pe-4" src="../img/essays/smart-questions.png">
 
 *"\[There is\] no such thing as a dumb question."*
 
