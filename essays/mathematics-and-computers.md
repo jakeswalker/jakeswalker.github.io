@@ -14,9 +14,9 @@ labels:
 
 <img width="500px" class="rounded float-start pe-4" src="../img/essays/alan-turing.png">
 
-## The joy of making things
-
 Vincent van Gogh, Claude Monet, Bob Dylan, and John Lennon, those were the kind of people that I looked up to growing up (and still do). Having parents who had both studied art, I was always interested in arts and music, and never considered myself as an academic person. After graduating from high school, I did not have a career path that I had chosen, nor did I see the benefit of going to school or importance of education; I naively thought that people go to college only because their parents told them to, or because they had nothing else to do. I became disinterested in the idea of college education, and at the same time, having grown up in Japan with English as my second language, I did not think that I could finish college. Seeing that I was wasting my money on college tuition, I decided to work full-time.
+
+## The joy of making things
 
 After working full time for several years at various small businesses, I became interested in starting a business of my own. Having no savings nor experience to start my own business, I decided to start something that did not require a lot of money or put me in a financial risk. After researching online, I discovered that there are teenagers who make their own iPhone apps and sell them on the App Store. Having learned that most of these teenagers were self-taught, I taught myself how to write computer code and program by watching online videos and researching blogs. After six months of studying and developing, I was able to release my own iPhone app through the App Store. Although I did not make profit from releasing my own iPhone app, it was extremely satisfying and exciting to see my app in the App Store and have thousands of people around the world download it. It was a turning point in my life where I realized that I am able to do things that I never though I was able to do; it suddenly opened up my career choices. I had never considered software engineering as my career choice before, but this experience made me decide to pursue a degree in Computer Science.
 
