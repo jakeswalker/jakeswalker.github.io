@@ -1,7 +1,7 @@
 ---
 layout: essay
 type: essay
-title: "Mathematics and Computers"
+title: "Math and Computers"
 # All dates must be YYYY-MM-DD format!
 date: 2023-01-29
 published: true
