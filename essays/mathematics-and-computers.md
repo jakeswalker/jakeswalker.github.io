@@ -1,7 +1,7 @@
 ---
 layout: essay
 type: essay
-title: "Math and Computers"
+title: "Mathematics and Computers"
 # All dates must be YYYY-MM-DD format!
 date: 2023-01-29
 published: true
@@ -14,7 +14,7 @@ labels:
 
 <img width="430px" class="rounded float-start pe-4" src="../img/essays/alan-turing.png">
 
-## How I ended up as a Computer Science major
+## How I ended up here
 
 Vincent van Gogh, Claude Monet, Bob Dylan, and John Lennon, those were the kind of people that I looked up to growing up (and still do). Having parents who had both studied art, I was always interested in arts and music, and never considered myself as an academic person. After graduating from high school, I did not have a career path that I had chosen, nor did I see the benefit of going to school or importance of education; I naively thought that people go to college only because their parents told them to, or because they had nothing else to do. I became disinterested in the idea of college education, and at the same time, having grown up in Japan, and having English as my second language, I did not think that I could finish college. Seeing that I was wasting my money on college tuition, I decided to work full-time.
 
