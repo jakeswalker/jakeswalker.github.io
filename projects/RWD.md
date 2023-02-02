@@ -34,3 +34,7 @@ Click on the links below to view the responsive web designs on your browser:
 - [Scroll-To-Hide Navigation Bar](https://jakeswalker.github.io/projects/RWD/scroll-hide-nav/index.html) \[[Source Code](https://github.com/jakeswalker/jakeswalker.github.io/blob/main/projects/RWD/scroll-hide-nav/index.html)\]
 - [Tab-Panels](https://jakeswalker.github.io/projects/RWD/tab-panels/index.html) \[[Source Code](https://github.com/jakeswalker/jakeswalker.github.io/blob/main/projects/RWD/tab-panels/index.html)\]
 - [Vertical Toggle-Menu](https://jakeswalker.github.io/projects/RWD/vertical-toggle-menu/index.html) \[[Source Code](https://github.com/jakeswalker/jakeswalker.github.io/blob/main/projects/RWD/vertical-toggle-menu/index.html)\]
+
+## What I learned
+
+This was my first project associated with web development in which I experienced HTML, CSS, JavaScript, and jQuery, which I learned the basics through a book called *Web Design with HTML, CSS, JavaScript and JQuery Set* by Jon Duckett. I was also able to experience the basics of web development process such as purchasing a domain name,  web hosting, as well as connecting to a server via File Transfer Protocol.
