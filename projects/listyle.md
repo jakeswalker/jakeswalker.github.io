@@ -32,4 +32,6 @@ An iOS application that I designed, programmed, and deployed using Illustrator, 
   <li>Search items on popular websites such as Google, Yahoo, Amazon, etc.</li>
 </ul>
 
+This was my first project associated with softwares in which I learned my first programming language, Objective-C. Through this experience, I found the joy of making things and having people use what I had made, which ultimately made me decide to pursue a degree in Computer Science.
+
 The app received a couple thousand downloads from around the world and was featured by app bloggers.
