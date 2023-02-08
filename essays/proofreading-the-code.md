@@ -12,7 +12,7 @@ labels:
 
 <img width="400px" class="rounded float-start pe-4" src="../img/essays/proofreading.png">
 
-In the United States, computer programs are considered literary works under the definition in the Copyright Act. Although this may be a surprise to some, but by definition, they are considered literary works as they are expressed in words, numbers, or other numerical symbols or indicia. As it is a convention for literary works such as books to go through a proofreading process, I believe it is reasonable for computer programs to also go through the "proofreading" process, or in a more accurate term, conform to coding standards.
+In the United States, computer programs are considered literary works under the definition in the Copyright Act. Although this may be a surprise to some, by definition, they are considered literary works as they are expressed in words, numbers, or other numerical symbols or indicia. As it is a convention for literary works such as books to go through a proofreading process, I believe it is reasonable for computer programs to also go through the "proofreading" process, or in a more accurate term, conform to coding standards.
 
 ## Coding standards are like proofreading
 
