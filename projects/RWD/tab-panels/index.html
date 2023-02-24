@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="UTF-8" />
+	<meta name="author" content="jwalkar.com" />
+	<meta name="description" content="demonstration of desktop and mobile friendly website" />
+	<meta name="keywords" content="responsive, degital, generative, computational, design, graphic, art, web, app, iOS, developer" />
+	<link rel="shortcut icon" type="image/png" href="/favicon.png" />
+	<title>J Walkar - Tab Panels</title>
+
+	<link href='https://fonts.googleapis.com/css?family=Monda' rel='stylesheet' type='text/css'>
+	<link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+	<style type="text/css">
+
+	body {
+		margin: 0px;
+		font-family: 'Monda', sans-serif;
+	}
+	.outer {
+		z-index: 10;
+		position: relative;
+		float: left;
+		margin-left: 0px;
+		width: 100%;
+		min-height: 100vh;
+		background-color: white;
+	}
+	.header {
+		width: 100%;
+		height: 100px;
+		background-color: rgb(0,0,255);
+		background-color: hsla(250,100%,75%,0.95);
+	}
+	.navBrand {
+		display: inline-block;
+		float: left;
+		margin-left: 40px;
+	}
+	.brand {
+		font-size: 17px;
+		line-height: 100px;
+		letter-spacing: 3px;
+		color: white;
+		text-transform: uppercase;
+		text-decoration: underline;
+	}
+	.brand:hover, .brand:active {
+		text-decoration: underline;
+	}
+	.navMenu {
+		display: inline-block;
+		float: right;
+		margin-right: 40px;
+	}
+	.navButton {
+		display: none;
+		float: right;
+		background: none;
+		border: none;
+	}
+	.toggleButton {
+		background: none;
+		border: none;
+		color: white;
+		cursor: pointer;
+		outline: none;
+	}
+	.tabs {
+		margin: 0px;
+		padding: 0px;
+		list-style-type: none;
+		font-size: 0px;
+	}
+	.tab {
+		display: inline-block;
+		width: 150px;
+		height: 100%;
+		text-align: center;
+	}
+	.tab a {
+		display: inline-block;
+		width: 100%;
+		line-height: 100px;
+		font-size: 17px;
+		letter-spacing: 3px;
+		color: white;
+		text-transform: uppercase;
+		text-decoration: none;
+	}
+	.tab a.active {
+		color: rgb(255,255,255);
+		text-decoration: underline;
+	}
+	.tabPanel {
+		display: none;
+	}
+	.tabPanel.active {
+		display: block;
+		position: absolute;
+		width: 100%;
+		border-top-width: 0px;
+		background-color: hsla(250,100%,75%,0.95);
+	}
+	.tabPanel div {
+		float: right;
+		margin: 20px;
+		width: 150px;
+		overflow: hidden;
+	}
+	.tabPanel h3 {
+		margin: 0px;
+		color: white;
+	}
+	.tabPanel ul {
+		margin: 0px;
+		padding: 0px;
+	}
+	.tabPanel ul li {
+		word-break: keep-all;
+	}
+	.tabPanel ul li a {
+		text-decoration: none;
+		font-weight: bold;
+		color: white;
+	}
+	.tmContainer {
+		display: none;
+		z-index: 5;
+		position: absolute;
+		right: 0;
+		overflow-x: hidden;
+		overflow-y: auto;
+		background-color: hsla(250,100%,75%,0.95);
+	}
+	.toggleMenu {
+		width: 230px;
+		height: 100vh;
+	}
+	.toggleMenu ul {
+		margin: 0px;
+		padding: 0px;
+	}
+	.toggleMenu li {
+		list-style-type: none;
+	}
+	.toggleMenu a {
+		display: inline-block;
+		width: 100%;
+		color: lightgray;
+		letter-spacing: 1px;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-size: 15px;
+		line-height: 50px;
+	}
+	.toggleMenu .active {
+		color: white;
+	}
+	.toggleMenu a:hover, .toggleMenu a:active {
+		color: white;
+		text-decoration: none;
+	}
+	.toggleMenu span {
+		margin-left: 25px;
+	}
+	.accordion {
+		margin: 0px;
+		padding: 0px;
+		font-size: 0px;
+		list-style-type: none;
+	}
+	.accordionButton {
+		width: 100%;
+		height: 50px;
+		background: hsla(220,100%,75%,1.0);
+		border: none;
+		outline: none;
+		color: white;
+	}
+	.accordionButton span {
+		float: left;
+		margin-left: 10px;
+		font-family: 'Monda', sans-serif;
+		font-size: 15px;
+		line-height: 50px;
+		letter-spacing: 1px;
+		color: white;
+	}
+	.accordionButton .fa {
+		float: right;
+		margin-right: 10px;
+		line-height: 50px;
+	}
+	.accordionPanel {
+		display: none;
+	}
+	.accordionPanel div {
+		width: 100%;
+	}
+	.accordionPanel h3 {
+		margin: 12px 10px 0px 12px;
+		font-size: 17px;
+		color: white;
+	}
+	.accordionPanel ul {
+		margin: 0px;
+		padding: 0px;
+	}
+	.accordionPanel ul li {
+		word-break: keep-all;
+	}
+	.accordionPanel ul li a {
+		margin-left: 20px;
+		line-height: 40px;
+		text-decoration: none;
+		text-transform: none;
+		color: white;
+	}
+
+	@media(max-width: 900px){
+
+		.header {
+			height: 70px;
+		}
+		.navBrand {
+			margin-left: 15px;
+		}
+		.brand {
+			font-size: 15px;
+			line-height: 66px;
+			letter-spacing: 1px;
+		}
+		.navMenu {
+			display: none;
+		}
+		.navButton {
+			display: inline-block;
+			margin-right: 20px;
+			line-height: 70px;
+		}
+		.tabPanel.active {
+			display: none;
+		}
+
+	}
+		
+	</style>
+
+</head>
+
+<body>
+
+	<div class="outer">
+
+		<header class="header">
+
+			<nav>
+				<div class="navBrand">
+					<a class="brand" href="#">Tab Panels</a>
+				</div>
+
+				<div class="navMenu">
+					<ul class="tabs">
+						<li class="tab"><a href="#tab1">Tab 1</a></li>
+						<li class="tab"><a href="#tab2">Tab 2</a></li>
+						<li class="tab"><a href="#tab3">Tab 3</a></li>
+						<li class="tab"><a href="#tab4">Tab 4</a></li>
+					</ul>
+				</div>
+
+				<div class="navButton">
+					<button class="toggleButton"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></button>
+				</div>
+			</nav>
+
+		</header>
+
+		<div class="tabPanel" id="tab1">
+			<div>
+				<h3>Column 4</h3>
+				<ul>
+		       		<li><a href="#">Link 1</a></li>
+		       		<li><a href="#">Link 2</a></li>
+		       		<li><a href="#">Link 3</a></li>
+		        </ul>
+			</div>
+			<div>
+				<h3>Column 3</h3>
+				<ul>
+		       		<li><a href="#">Link 1</a></li>
+		       		<li><a href="#">Link 2</a></li>
+		       		<li><a href="#">Link 3</a></li>
+		       		<li><a href="#">Link 4</a></li>
+		       		<li><a href="#">Link 5</a></li>
+		       		<li><a href="#">Link 6</a></li>
+		        </ul>
+			</div>
+			<div>
+				<h3>Column 2</h3>
+				<ul>
+		       		<li><a href="#">Link 1</a></li>
+		       		<li><a href="#">Link 2</a></li>
+		       		<li><a href="#">Link 3</a></li>
+		       		<li><a href="#">Link 4</a></li>
+		       		<li><a href="#">Link 5</a></li>
+		       		<li><a href="#">Link 6</a></li>
+		       		<li><a href="#">Link 7</a></li>
+		       		<li><a href="#">Link 8</a></li>
+		       		<li><a href="#">Link 9</a></li>
+		       		<li><a href="#">Link 10</a></li>
+		        </ul>
+			</div>
+			<div>
+				<h3>Column 1</h3>
+				<ul>
+		       		<li><a href="#">Link 1</a></li>
+		       		<li><a href="#">Link 2</a></li>
+		       		<li><a href="#">Link 3</a></li>
+		       		<li><a href="#">Link 4</a></li>
+		       		<li><a href="#">Link 5</a></li>
+		       		<li><a href="#">Link 6</a></li>
+		        </ul>
+			</div>
+	    </div>
+
+	    <div class="tabPanel" id="tab2">
+	    	<div>
+				<h3>Column 3</h3>
+				<ul>
+		       		<li><a href="#">Link 1</a></li>
+		       		<li><a href="#">Link 2</a></li>
+		       		<li><a href="#">Link 3</a></li>
+		       		<li><a href="#">Link 4</a></li>
+		       		<li><a href="#">Link 5</a></li>
+		       		
+		        </ul>
+			</div>
+			<div>
+				<h3>Column 2</h3>
+				<ul>
+		       		<li><a href="#">Link 1</a></li>
+		       		<li><a href="#">Link 2</a></li>
+		       		<li><a href="#">Link 3</a></li>
+		       		<li><a href="#">Link 4</a></li>
+		       		
+		        </ul>
+			</div>
+			<div>
+				<h3>Column 1</h3>
+				<ul>
+		       		<li><a href="#">Link 1</a></li>
+		       		<li><a href="#">Link 2</a></li>
+		       		<li><a href="#">Link 3</a></li>
+		       		<li><a href="#">Link 4</a></li>
+		       		<li><a href="#">Link 5</a></li>
+		       		<li><a href="#">Link 6</a></li>
+		        </ul>
+			</div>
+	    </div>
+
+	    <div class="tabPanel" id="tab3">
+	    	<div>
+				<h3>Column 4</h3>
+				<ul>
+		       		<li><a href="#">Link 1</a></li>
+		       		<li><a href="#">Link 2</a></li>
+		        </ul>
+			</div>
+	    	<div>
+				<h3>Column 3</h3>
+				<ul>
+		       		<li><a href="#">Link 1</a></li>
+		       		<li><a href="#">Link 2</a></li>
+		       		<li><a href="#">Link 3</a></li>
+		       		<li><a href="#">Link 4</a></li>
+		        </ul>
+			</div>
+			<div>
+				<h3>Column 2</h3>
+				<ul>
+		       		<li><a href="#">Link 1</a></li>
+		       		<li><a href="#">Link 2</a></li>
+		       		<li><a href="#">Link 3</a></li>
+		       		<li><a href="#">Link 4</a></li>
+		       		<li><a href="#">Link 5</a></li>
+		       		<li><a href="#">Link 6</a></li>
+		       		<li><a href="#">Link 7</a></li>
+		        </ul>
+			</div>
+			<div>
+				<h3>Column 1</h3>
+				<ul>
+		       		<li><a href="#">Link 1</a></li>
+		       		<li><a href="#">Link 2</a></li>
+		       		<li><a href="#">Link 3</a></li>
+		       		<li><a href="#">Link 4</a></li>
+		       		<li><a href="#">Link 5</a></li>
+		       		<li><a href="#">Link 6</a></li>
+		       		<li><a href="#">Link 7</a></li>
+		       		<li><a href="#">Link 8</a></li>
+		        </ul>
+			</div>
+	    </div>
+
+	    <div class="tabPanel" id="tab4">
+	    	<div>
+				<h3>Column 3</h3>
+				<ul>
+		       		<li><a href="#">Link 1</a></li>
+		       		<li><a href="#">Link 2</a></li>
+		       		<li><a href="#">Link 3</a></li>
+		       		<li><a href="#">Link 4</a></li>
+		       		<li><a href="#">Link 5</a></li>
+		        </ul>
+			</div>
+			<div>
+				<h3>Column 2</h3>
+				<ul>
+		       		<li><a href="#">Link 1</a></li>
+		       		<li><a href="#">Link 2</a></li>
+		       		<li><a href="#">Link 3</a></li>
+		        </ul>
+			</div>
+			<div>
+				<h3>Column 1</h3>
+				<ul>
+		       		<li><a href="#">Link 1</a></li>
+		       		<li><a href="#">Link 2</a></li>
+		       		<li><a href="#">Link 3</a></li>
+		        </ul>
+			</div>
+	    </div>
+
+	</div> <!-- outer close -->
+
+	<div class="tmContainer">
+		<div class="toggleMenu">
+			<ul class="accordion">
+				<li>
+					<button class="accordionButton"><span>Tab 1</span><i class="fa fa-chevron-down fa-lg" aria-hidden="true"></i></button>
+					<div class="accordionPanel">
+						<div>
+							<h3>Column 1</h3>
+							<ul>
+					       		<li><a href="#">Link 1</a></li>
+					       		<li><a href="#">Link 2</a></li>
+					       		<li><a href="#">Link 3</a></li>
+					       		<li><a href="#">Link 4</a></li>
+					       		<li><a href="#">Link 5</a></li>
+					       		<li><a href="#">Link 6</a></li>
+					        </ul>
+						</div>
+						<div>
+							<h3>Column 2</h3>
+							<ul>
+					       		<li><a href="#">Link 1</a></li>
+					       		<li><a href="#">Link 2</a></li>
+					       		<li><a href="#">Link 3</a></li>
+					       		<li><a href="#">Link 4</a></li>
+					       		<li><a href="#">Link 5</a></li>
+					       		<li><a href="#">Link 6</a></li>
+					       		<li><a href="#">Link 7</a></li>
+					       		<li><a href="#">Link 8</a></li>
+					       		<li><a href="#">Link 9</a></li>
+					       		<li><a href="#">Link 10</a></li>
+					        </ul>
+						</div>
+						<div>
+							<h3>Column 3</h3>
+							<ul>
+					       		<li><a href="#">Link 1</a></li>
+					       		<li><a href="#">Link 2</a></li>
+					       		<li><a href="#">Link 3</a></li>
+					       		<li><a href="#">Link 4</a></li>
+					       		<li><a href="#">Link 5</a></li>
+					       		<li><a href="#">Link 6</a></li>
+					        </ul>
+						</div>
+						<div>
+							<h3>Column 4</h3>
+							<ul>
+					       		<li><a href="#">Link 1</a></li>
+					       		<li><a href="#">Link 2</a></li>
+					       		<li><a href="#">Link 3</a></li>
+					        </ul>
+						</div>
+					</div>
+				</li>
+				<li>
+					<button class="accordionButton"><span>Tab 2</span><i class="fa fa-chevron-down fa-lg" aria-hidden="true"></i></button>
+					<div class="accordionPanel">
+						<div>
+							<h3>Column 1</h3>
+							<ul>
+					       		<li><a href="#">Link 1</a></li>
+					       		<li><a href="#">Link 2</a></li>
+					       		<li><a href="#">Link 3</a></li>
+					       		<li><a href="#">Link 4</a></li>
+					       		<li><a href="#">Link 5</a></li>
+					       		<li><a href="#">Link 6</a></li>
+					        </ul>
+						</div>
+						<div>
+							<h3>Column 2</h3>
+							<ul>
+					       		<li><a href="#">Link 1</a></li>
+					       		<li><a href="#">Link 2</a></li>
+					       		<li><a href="#">Link 3</a></li>
+					       		<li><a href="#">Link 4</a></li>
+					       		
+					        </ul>
+						</div>
+						<div>
+							<h3>Column 3</h3>
+							<ul>
+					       		<li><a href="#">Link 1</a></li>
+					       		<li><a href="#">Link 2</a></li>
+					       		<li><a href="#">Link 3</a></li>
+					       		<li><a href="#">Link 4</a></li>
+					       		<li><a href="#">Link 5</a></li>
+					       		
+					        </ul>
+						</div>
+					</div>
+				</li>
+				<li>
+					<button class="accordionButton"><span>Tab 3</span><i class="fa fa-chevron-down fa-lg" aria-hidden="true"></i></button>
+					<div class="accordionPanel">
+						<div>
+							<h3>Column 1</h3>
+							<ul>
+					       		<li><a href="#">Link 1</a></li>
+					       		<li><a href="#">Link 2</a></li>
+					       		<li><a href="#">Link 3</a></li>
+					       		<li><a href="#">Link 4</a></li>
+					       		<li><a href="#">Link 5</a></li>
+					       		<li><a href="#">Link 6</a></li>
+					       		<li><a href="#">Link 7</a></li>
+					       		<li><a href="#">Link 8</a></li>
+					        </ul>
+						</div>
+						<div>
+							<h3>Column 2</h3>
+							<ul>
+					       		<li><a href="#">Link 1</a></li>
+					       		<li><a href="#">Link 2</a></li>
+					       		<li><a href="#">Link 3</a></li>
+					       		<li><a href="#">Link 4</a></li>
+					       		<li><a href="#">Link 5</a></li>
+					       		<li><a href="#">Link 6</a></li>
+					       		<li><a href="#">Link 7</a></li>
+					        </ul>
+						</div>
+						<div>
+							<h3>Column 3</h3>
+							<ul>
+					       		<li><a href="#">Link 1</a></li>
+					       		<li><a href="#">Link 2</a></li>
+					       		<li><a href="#">Link 3</a></li>
+					       		<li><a href="#">Link 4</a></li>
+					        </ul>
+						</div>
+						<div>
+							<h3>Column 4</h3>
+							<ul>
+					       		<li><a href="#">Link 1</a></li>
+					       		<li><a href="#">Link 2</a></li>
+					        </ul>
+						</div>
+					</div>
+				<li>
+					<button class="accordionButton"><span>Tab 4</span><i class="fa fa-chevron-down fa-lg" aria-hidden="true"></i></button>
+					<div class="accordionPanel">
+						<div>
+							<h3>Column 1</h3>
+							<ul>
+					       		<li><a href="#">Link 1</a></li>
+					       		<li><a href="#">Link 2</a></li>
+					       		<li><a href="#">Link 3</a></li>
+					       		<li><a href="#">Link 4</a></li>
+					       		<li><a href="#">Link 5</a></li>
+					       		<li><a href="#">Link 6</a></li>
+					       		<li><a href="#">Link 7</a></li>
+					       		<li><a href="#">Link 8</a></li>
+					        </ul>
+						</div>
+						<div>
+							<h3>Column 2</h3>
+							<ul>
+					       		<li><a href="#">Link 1</a></li>
+					       		<li><a href="#">Link 2</a></li>
+					       		<li><a href="#">Link 3</a></li>
+					       		<li><a href="#">Link 4</a></li>
+					       		<li><a href="#">Link 5</a></li>
+					       		<li><a href="#">Link 6</a></li>
+					       		<li><a href="#">Link 7</a></li>
+					        </ul>
+						</div>
+						<div>
+							<h3>Column 3</h3>
+							<ul>
+					       		<li><a href="#">Link 1</a></li>
+					       		<li><a href="#">Link 2</a></li>
+					       		<li><a href="#">Link 3</a></li>
+					       		<li><a href="#">Link 4</a></li>
+					        </ul>
+						</div>
+						<div>
+							<h3>Column 4</h3>
+							<ul>
+					       		<li><a href="#">Link 1</a></li>
+					       		<li><a href="#">Link 2</a></li>
+					        </ul>
+						</div>
+					</div>
+				</li>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+	
+	<script type="text/javascript">
+
+
+	////////// tab panel //////////
+	var $link = $('.tabs a');
+	var $tabPanel = $('.tabPanel');
+	var lastActiveLink;
+
+	$link
+		.on('mouseenter', function(){
+			var $this = $(this);
+			var $panel = $($this.attr('href'));
+
+			// if there's an active
+			if ($link.hasClass('active')) {
+				var $activeLink = $('.tabs .active');
+				var $activePanel = $($activeLink.attr('href'));
+
+				// if it's not already active
+				if (!$this.hasClass('active')) {
+					$activeLink.removeClass('active');
+					$activePanel.removeClass('active');
+
+					$this.addClass('active');
+					$panel.addClass('active');
+
+					lastActiveLink = $activeLink;
+				}
+			}
+			// if there's no active at all
+			else {
+				$this.addClass('active');
+				$panel.addClass('active');
+
+				lastActiveLink = $this;
+			}
+		})
+		.on('mouseleave', function(){
+			var $activeLink = $('.tabs .active');
+			var $activePanel = $($activeLink.attr('href'));
+
+			$activeLink.removeClass('active');
+			$activePanel.removeClass('active');
+		});
+
+	$tabPanel
+		.on('mouseenter', function(){
+			var $activeLink = lastActiveLink;
+			var $activePanel = $($activeLink.attr('href'));
+
+			$activeLink.addClass('active');
+			$activePanel.addClass('active');
+		})
+		.on('mouseleave', function(){
+			var $activeLink = lastActiveLink;
+			var $activePanel = $($activeLink.attr('href'));
+
+			$activeLink.removeClass('active');
+			$activePanel.removeClass('active');
+		});
+
+	///////// horizontal toggle menu //////////
+	var $body = $('body');
+	var $outer = $('.outer');
+	var $outerChild = $outer.find('*');
+	var $tmContainer = $('.tmContainer');
+	var $toggleButton = $('.toggleButton');
+	var toggleMenuOpen = false;
+
+	// open menu
+	$toggleButton.on('click', function(e){
+		e.preventDefault();
+		if (!toggleMenuOpen) {
+			$body.css("overflow", "hidden");
+			$tmContainer.css("display", "inline-block");
+			$outer
+				.not(':animated')
+				.animate({
+					"margin-left": "-230px"
+				}, 200, "easeInOutCirc", function(){
+					//animation complete
+					$outerChild
+						.css("pointer-events", "none");
+					toggleMenuOpen = true;
+				});
+		}
+	});
+
+	// close menu
+	$outer.on('click', function(e){
+		if (toggleMenuOpen) {
+			$outer
+				.not(':animated')
+				.animate({
+					"margin-left": "0px"
+				}, 200, "easeInOutCirc", function(){
+					// animation complete
+					$body.css("overflow", "auto");
+					$tmContainer.css("display", "none");
+					$outerChild.css("pointer-events", "auto");
+					toggleMenuOpen = false;
+				});
+		}
+	});
+
+	// remove toggleMenu when resize
+	$(window).resize(function() {
+
+		if (toggleMenuOpen) {
+			var $screenWidth = $(this).width();
+			if ($screenWidth > 900) {
+				$outer.css("margin-left", "0px");
+				$body.css("overflow", "auto");
+				$tmContainer.css("display", "none");
+				$outerChild.css("pointer-events", "auto");
+				toggleMenuOpen = false;
+			}
+		}
+	});
+
+	////////// accordion //////////
+	$('.accordionButton').on('click', function(e){
+		e.preventDefault();
+
+		var $accordionButton = $(this);
+		var $accordionPanel = $accordionButton.next('.accordionPanel');
+		var $arrow = $accordionButton.find('.fa')
+		var $parent = $accordionPanel.parent('li');
+
+		// change arrow
+		if (!$accordionPanel.is(':animated')) {
+			if ($accordionPanel.is(':hidden')) {
+				$arrow.removeClass('fa-chevron-down');
+				$arrow.addClass('fa-chevron-up')
+			}
+			else {
+				$arrow.removeClass('fa-chevron-up');
+				$arrow.addClass('fa-chevron-down')
+			}
+		}
+
+		// animate accordionPanel
+		$accordionPanel
+			.not(':animated')
+			.slideToggle(200, function(){
+
+			});
+	});
+
+	</script>
+
+</body>
+
+</html>

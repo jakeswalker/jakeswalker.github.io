@@ -1,0 +1,98 @@
+{
+  "basics": {
+    "name": "Jake Walker",
+    "label": "Student",
+    "picture": "../img/profile.png",
+    "email": "jakesw@hawaii.edu",
+    "phone": "",
+    "website": "https://jakeswalker.github.io",
+    "summary": "I am an undergraduate student at University of Hawai'i at Mānoa pursuing Bachelor of Science in Mathematics and Computer Science. I expect to graduate in Spring 2024.",
+    "location": { "address": "", "postalCode": "96822", "city": "Honolulu", "countryCode": "USA", "region": "Hawaii" },
+    "profiles": [
+      { "network": "github", "username": "jakeswalker", "url": "http://github.com/jakeswalker" },
+      { "network": "linkedin", "username": "jake-walker-094898261", "url": "https://www.linkedin.com/in/jake-walker-094898261/" }
+    ]
+  },
+  "interests": [
+    { "name": "Blockchain" },
+    { "name": "Mobile App Development" },
+    { "name": "Operating Systems" },
+    { "name": "Mathematics" }
+  ],
+  "skills": [
+    {
+      "name": "Languages and Frameworks",
+      "keywords": [ "HTML", "CSS", "Javascript", "jQuery", "Java", "C", "C++", "Objective-C", "MATLAB" ]
+    },
+    {
+      "name": "Toolsets/OS",
+      "keywords": [ "Windows", "macOS", "Ubuntu", "Git/GitHub", "Xcode", "Photoshop", "Illustrator", "GIMP", "LaTex" ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Hawaii at Manoa, Honolulu, HI",
+      "area": "Mathematics and Computer Science (expected Spring 2024)",
+      "studyType": "B.S.",
+      "startDate": "2021-01-11",
+      "endDate": "Present",
+      "courses": [
+        "ICS 311 - Algorithms",
+        "MATH 407 - Numerical Analysis",
+        "MATH 372 - Elementary Probability and Statistics",
+        "MATH 321 - Introduction to Advanced Mathematics",
+        "MATH 307 - Linear Algebra and Differential Equations", 
+        "MATH 244 - Calculus IV"
+      ]
+    },
+     {
+      "institution": "University of Hawaii Kapiolani Community College, Honolulu, HI",
+      "area": "Natural Science: Physical Sciences and Information & Communications Technology",
+      "studyType": "A.S.",
+      "startDate": "2017-01-09",
+      "endDate": "2021-05-07",
+      "courses": [
+        "ICS 241 - Discrete Mathematics II",
+        "ICS 212 - Program Structure (C++)",
+        "ICS 211 - Introduction to Computer Science II (Java)",
+        "ICS 141 - Discrete Mathematics I",
+        "ICS 111 - Introduction to Computer Science I (Java)",
+        "MATH 241-243 - Calculus I-III"
+      ]
+    }
+  ],
+    "work": [
+    {
+      "company": "Luana Hawaii Realty",
+      "position": "Reservation Specialist / Assistant Property Manager",
+      "startDate": "2019",
+      "endDate": "2020",
+      "summary": "Managed vacation rental reservations and assisted in maintenance activities of over 30 properties including luxury condo, hotel condo, residential condo units, villas, and apartments. Communicated with property owners in both English and Japanese to report on property conditions and conduct repairs and/or improvements as needed."
+    }
+  ],
+  "awards": [
+     {
+      "title": "UHM CC Transfer Merit Award",
+      "date": "Fall 2021 - Spring 2022",
+      "awarder": "University of Hawaii at Manoa",
+      "summary": "Scholarships awarded to incoming transfer students from University of Hawaii Community Colleges with a minimum overall GPA of 3.0."
+    },
+    {
+      "title": "Valedictorian",
+      "date": "Fall 2021",
+      "awarder": "University of Hawaii Kapiolani Community College",
+      "summary": "Awarded to students with highest GPA among a graduating class."
+    },
+    {
+      "title": "S-STEM Scholarship",
+      "date": "Fall 2020 - Spring 2021",
+      "awarder": "National Science Foundation",
+      "summary": "A grant-funded program sponsored by the National Science Foundation that award scholarships to academically talented students."
+    }
+  ],
+  "references": [
+    {
+      "name": "Available upon request."
+    }
+  ]
+}

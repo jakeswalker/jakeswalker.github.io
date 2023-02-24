@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="UTF-8" />
+	<meta name="author" content="jwalkar.com" />
+	<meta name="description" content="demonstration of desktop and mobile friendly website" />
+	<meta name="keywords" content="responsive, degital, generative, computational, design, graphic, art, web, app, iOS, developer" />
+	<link rel="shortcut icon" type="image/png" href="/favicon.png" />
+	<title>J Walkar - Modal Window</title>
+
+	<link href='https://fonts.googleapis.com/css?family=Monda' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Pirata+One' rel='stylesheet' type='text/css'>
+	<link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+	<style type="text/css">
+
+	body {
+		margin: 0px;
+		font-family: 'Monda', sans-serif;
+	}
+	.outer {
+		display: table;
+		position: absolute;
+		width: 100vw;
+		height: 100vh;
+	}
+	.middle {
+		display: table-cell;
+		vertical-align: middle;
+	}
+	.inner {
+		margin-left: auto;
+		margin-right: auto;
+		width: 140px;
+		height: 70px;
+	}
+	#pushMeButtonOuter {
+		width: 100%;
+		text-align: center;
+		line-height: 300px;
+	}
+	#pushMeButton {
+		margin: 0px;
+		padding: 0px;
+		width: 100%;
+		height: 100%;
+		font-family: 'Monda', sans-serif;
+		font-size: 150%;
+		font-weight: bold;
+		color: white;
+		background: hsla(220,100%,75%,1.0);
+		border: none;
+		border-radius: 10px;
+		cursor: pointer;
+		outline: none;
+	}
+	#pushMeButton:hover, #pushMeButton:active {
+		background: hsla(255,100%,75%,1.0);
+	}
+	.modalWin {
+		display: none;
+		opacity: 0.0;
+	}
+	.modalWinOuter {
+		display: table;
+		position: absolute;
+		width: 100vw;
+		height: 100vh;
+	}
+	.modalWinMiddle {
+		display: table-cell;
+		vertical-align: middle;
+	}
+	.modalWinBack {
+		width: 100vw;
+		height: 100vh;
+		background-color: rgba(0,0,0,0.7);
+	}
+	.modalWinInner {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		margin: auto;
+		width: 300px;
+		height: 300px;
+		background-color: hsla(150,100%,75%,1.0);
+	}
+	.modalWinInner p {
+		margin: 0px;
+		font-family: 'Arial', bold;
+		font-size: 240%;
+		font-weight: bold;
+		letter-spacing: 2px;
+		text-align: center;
+		line-height: 300px;
+		color: rgba(255,152,202,1.0);
+	}
+	#closeModalWin {
+		float: right;
+		margin-right: 20px;
+		color: white;
+	}
+
+	@media(max-width: 900px){
+
+		.modalWinInner {
+			width: 250px;
+			height: 250px;
+		}
+		.modalWinInner p {
+			line-height: 250px;
+		}
+		
+	}
+		
+	</style>
+
+</head>
+
+<body>
+
+	<div class="outer">
+		<div class="middle">
+			<div class="inner">
+				<button id="pushMeButton">Push Me</button>
+			</div>
+		</div>
+	</div>
+
+	<div class="modalWin">
+		<div class="modalWinOuter">
+			<div class="modalWinMiddle">
+				<div class="modalWinInner">
+					<p>Hello World</p>
+				</div>
+				<div class="modalWinBack">
+					<p id="closeModalWin"><i class="fa fa-times fa-lg" aria-hidden="true"></i></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+	
+	<script type="text/javascript">
+
+	var $body = $('body');
+	var $modalWin = $('.modalWin');
+	var $pushMeButton = $('#pushMeButton');
+	var $modalWinBack = $('.modalWinBack');
+
+	// open modal window
+	$pushMeButton.on('click', function(e){
+		e.preventDefault();
+
+		if ($modalWin.not(':animated')) {
+			$modalWin.css("display", "inline");
+			$body.css("overflow", "hidden");
+			$modalWin
+				.animate({
+					"opacity": 1.0
+				}, 300, function(){
+					// animation complete
+				});
+		}
+	});
+
+	// close modal window
+	$modalWinBack.on('click', function(){
+
+		if ($modalWin.not(':animated')) {
+			$modalWin
+				.animate({
+					"opacity": 0.0
+				}, 300, function(){
+					// animation complete
+					$modalWin.css("display", "none");
+					$body.css("overflow", "auto");
+				});	
+		}
+	});
+
+	var colorTimer;
+	var isBlue = true;
+	var $pushMeButton = $('#pushMeButton');
+
+	function startColorTimer(){
+
+		colorTimer = setInterval(function(){
+
+			if (isBlue) {
+				$pushMeButton.css("background", "hsla(255,100%,75%,1.0)");
+				isBlue = false;
+			}
+			else {
+				$pushMeButton.css("background", "hsla(220,100%,75%,1.0)");
+				isBlue = true;
+			}			
+		}, 100);
+	}
+
+	function stopColorTimer(){
+		clearInterval(colorTimer);
+	}
+
+	$pushMeButton
+		.on('mouseenter', function(){
+			stopColorTimer();
+			$(this).css("background", "hsla(255,100%,75%,1.0)");
+			isBlue = false;
+		})
+		.on('mouseleave', function(){
+			startColorTimer();
+			$(this).css("background", "hsla(220,100%,75%,1.0)");
+			isBlue = true;
+		});
+
+	startColorTimer();
+
+	</script>
+
+</body>
+
+</html>
