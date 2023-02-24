@@ -17,8 +17,9 @@ One of the most beneficial things I think a software engineer can get out of Boo
 
 To demonstrate, here is a simple webpage that I built using Bootstrap:
 
-<img width="500px" class="rounded float-start pe-4" src="../img/essays/bootstrap-large.png">
-<img width="300px" class="rounded float-start pe-4" src="../img/essays/bootstrap-small.png">
+<img width="500px" class="border-dark float-start pe-4" src="../img/essays/bootstrap-large.png">
+<img width="300px" class="border-dark float-start pe-4" src="../img/essays/bootstrap-small.png">
+
 
 As shown in the images, the contents of the webpage is adjust dynamically according to its screen size. And as one can seen from the [code](https://github.com/jakeswalker/bootstrapexample/blob/main/index.html), only a few Bootstrap keywords have been added to the HTML code. Clearly, this is not possible with raw CSS and I find this feature of Bootstrap to be extremely power.
 
