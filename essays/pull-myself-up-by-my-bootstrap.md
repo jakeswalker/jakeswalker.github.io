@@ -17,9 +17,11 @@ One of the most beneficial things I think a software engineer can get out of Boo
 
 To demonstrate, here is a simple webpage that I built using Bootstrap:
 
-<img width="500px" class="rounded me-4" style="border-style: solid; border-color: #D3D3D3;" src="../img/essays/bootstrap-large.png">
-<img width="300px" class="rounded" style="border-style: solid; border-color: #D3D3D3;" src="../img/essays/bootstrap-small.png">
-</br>
+<div class="container">
+<img width="600px" class="rounded me-4" style="border-style: solid; border-color: #D3D3D3;" src="../img/essays/bootstrap-large.png">
+<img width="250px" class="rounded" style="border-style: solid; border-color: #D3D3D3;" src="../img/essays/bootstrap-small.png">
+</div>
+
 As shown in the images, the contents of the webpage is adjust dynamically according to its screen size. And as one can seen from the [code](https://github.com/jakeswalker/bootstrapexample/blob/main/index.html), only a few Bootstrap keywords have been added to the HTML code. Clearly, this is not possible with raw CSS and I find this feature of Bootstrap to be extremely power.
 
 Another beneficial thing that I found about Bootstrap is that it allows websites to have the same look and feel as many other well-designed websites. This is not surprising as Bootstrap was originally developed by Twitter to have common design patterns within the company. I personally find this to be extremely useful, as I believe that clients want designs that are aesthetically pleasing to many, and not designs that are aesthetically pleasing to the programmer. Although this may sound a bit anti-creative, I believe it is sometimes best to suppress programmer's own taste to have a good design, and with Bootstrap, programmers can rely on the designs that were built by a successful company, which I think is safe to say is aesthetically pleasing to many people around the world.
