@@ -17,8 +17,8 @@ One of the most beneficial things I think a software engineer can get out of Boo
 
 To demonstrate, here is a simple webpage that I built using Bootstrap:
 
-<div class="container justify-content-center">
-<img width="600px" class="rounded me-4" style="border-style: solid; border-color: #D3D3D3; margin-left: calc(50vw - 300);" src="../img/essays/bootstrap-large.png">
+<div class="container">
+<img width="600px" class="rounded me-4" style="border-style: solid; border-color: #D3D3D3;" src="../img/essays/bootstrap-large.png">
 <img width="250px" class="rounded" style="border-style: solid; border-color: #D3D3D3;" src="../img/essays/bootstrap-small.png">
 </div>
 
