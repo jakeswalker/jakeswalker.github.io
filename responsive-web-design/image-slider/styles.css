@@ -1,0 +1,169 @@
+body {
+	margin: 0px;
+	font-family: 'Monda', sans-serif;
+}
+.header {
+	width: 100%;
+	height: 250px;
+	background-color: hsla(150,65%,65%,1.0);
+}
+.header a {
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.navBrand {
+	width: 100%;
+	line-height: 150px;
+	text-align: center;
+}
+.navBrand h1 {
+	margin: 0px;
+}
+.navBrand a {
+	font-size: 150%;
+}
+.navMenu {
+	width: 100%;
+	text-align: center;
+}
+.navMenu span {
+	padding-right: 70px;
+}
+.navMenu a {
+	font-size: 18px;
+	font-weight: bold;
+	letter-spacing: 3px;
+}
+.navMenu span:last-child {
+	padding-right: 0px;
+}
+.outer {
+	display: table;
+   	min-height: calc(100vh - 250px);
+   	width: 100%;
+}
+.middle {
+	display: table-cell;
+	vertical-align: middle;
+}
+.slider {
+	margin: 100px auto 100px auto;
+	width: 80%;
+	height: 50vw;
+	max-width: 1200px;
+	max-height: 750px;
+	overflow: hidden;
+	background-color: rgb(243,243,243);
+}
+.slideButtonOuter {
+	display: table;
+	position: absolute;
+	width: 80%;
+	height: 50vw;
+	max-width: 1200px;
+	max-height: 750px;
+}
+.slideButtonMiddle {
+	display: table-cell;
+    vertical-align: middle;
+}
+.slideButtonInner {
+	height: 35px;
+}
+#sLButton {		
+	float: left;
+	margin-left: 10px;
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+	background: none;
+	border: none;
+	outline: none;
+	background-color: rgba(0,0,0,0.3);
+	color: rgba(255,255,255,0.8);
+}
+#sRButton {
+	float: right;
+	margin-right: 10px;
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+	background: none;
+	border: none;
+	outline: none;
+	background-color: rgba(0,0,0,0.3);
+	color: rgba(255,255,255,0.8);
+}
+#sLButton:hover, #sRButton:hover {
+	background-color: rgba(0,0,0,0.4);
+}
+.slides {
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	height: 100%;
+	list-style-type: none;
+	white-space: nowrap;
+	font-size: 0px;
+}
+.slide {
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+}
+.slide img {
+	width: 100%;
+}
+footer {
+    width: 100%;
+    height: 30px;
+}
+.photographer {
+	float: right;
+	margin-right: 20px;
+}
+.photographer a {
+	font-size: 14px;
+	color: rgba(50, 50, 50, 1.0);
+}
+.photographer a:hover, .photographer a:active {
+	color: rgba(50, 50, 50, 0.8);
+}
+
+@media(max-width: 900px) {
+	.header {
+		height: 120px;
+	}
+	.navBrand {
+		width: 100%;
+		line-height: 70px;
+	}
+	.navBrand a {
+		font-size: 33px;
+	}
+	.navMenu span {
+		padding-right: 30px;
+	}
+	.navMenu a {
+		font-size: 14px;
+		letter-spacing: 1px;
+	}
+	.outer {
+	   	min-height: calc(100vh - 120px);
+	}
+	.slider {
+		width: 100%;
+		height: 62.5vw;
+	}
+	.slideButtonOuter {
+		width: 100%;
+		height: 62.5vw;
+	}
+	.photographer {
+		margin-right: 15px;
+	}
+	.photographer a {
+		font-size: 12px;
+	}
+}

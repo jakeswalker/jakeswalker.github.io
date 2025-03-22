@@ -1,0 +1,174 @@
+body {
+	margin: 0px;
+	font-family: 'Monda', sans-serif;
+}
+.outer {
+	z-index: 10;
+	position: relative;
+	float: left;
+	margin-left: 0px;
+	width: 100%;
+	min-height: 100vh;
+	background-color: white;
+}
+.header {
+	width: 100%;
+	height: 100px;
+	background-color: hsla(220,100%,75%,1.0);
+}
+.navBrand {
+	display: inline-block;
+	float: left;
+	margin-left: 40px;
+}
+.navMenu {
+	display: inline-block;
+	float: right;
+	margin-right: 40px;
+}
+.navButton {
+	display: none;
+	float: right;
+	background: none;
+	border: none;
+}
+.toggleButton {
+	background: none;
+	border: none;
+	color: white;
+	cursor: pointer;
+	outline: none;
+}
+nav a {
+	display: inline-block;
+	color: white;
+	letter-spacing: 3px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 17px;
+	line-height: 100px;
+}
+nav span {
+	padding-right: 35px;
+}
+nav span:last-child {
+	padding-right: 0px;
+}
+nav a:hover, nav a:active {
+	color: lightgray;
+	text-decoration: none;
+}
+.brand {
+	color: white;
+	text-decoration: none;
+}
+.brand:hover, .brand:active {
+	color: white;
+}
+.tmContainer {
+	z-index: 5;
+	position: absolute;
+	right: 0;
+}
+.toggleMenu {
+	width: 300px;
+	height: 100vh;
+	background-color: hsla(220,100%,75%,1.0);
+}
+.toggleMenu ul {
+	margin: 0px;
+	padding: 0px;
+}
+.toggleMenu li {
+	list-style-type: none;
+}
+.toggleMenu a {
+	display: inline-block;
+	width: 100%;
+	color: white;
+	letter-spacing: 3px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 17px;
+	line-height: 60px;
+}
+.toggleMenu a:hover, .toggleMenu a:active {
+	color: lightgray;
+	text-decoration: none;
+}
+.toggleMenu span {
+	margin-left: 40px;
+}
+.wrapper {
+	width: 80%;
+	margin: 8% auto;
+	min-height: calc(100vh - 300px);
+	overflow: hidden;
+}
+.square {
+	float: left;
+	position: relative;
+	/*(100 - (width * numberOfBox)) / (numberOfBox * 2) = margin*/
+	/*(100 - (30 * 3)) / (3 * 2) = margin*/
+	margin: 1.66%; 
+	padding-bottom: 30%;
+	width: 30%;
+	background-color: rgba(210,210,210,1.0);
+	overflow: hidden;
+}
+footer {
+    width: 100%;
+    height: 200px;
+    background-color: hsla(220,100%,75%,1.0);
+}
+
+@media(max-width: 900px) {
+	.header {
+		height: 70px;
+	}
+	.navBrand {
+		margin-left: 15px;
+	}
+	.brand {
+		font-size: 15px;
+		line-height: 66px;
+		letter-spacing: 1px;
+	}
+	.navMenu {
+		display: none;
+	}
+	.navButton {
+		display: inline-block;
+		float: right;
+		margin-right: 15px;
+		line-height: 70px;
+		background: none;
+		border: none;
+	}
+	.toggleMenu {
+		width: 230px;
+	}
+	.toggleMenu a {
+		letter-spacing: 1px;
+		font-size: 15px;
+		line-height: 50px;
+	}
+	.toggleMenu span {
+		margin-left: 25px;
+	}
+	.wrapper {
+		width: 100%;
+		margin: 6% auto;
+		min-height: calc(100vh - 240px);
+	}
+	.square {
+   		/*(100 - (width * numberOfBox)) / (numberOfBox * 2) = margin*/
+   		/*(100 - (30 * 3)) / (3 * 2) = margin*/
+   		margin: 0.66%; 
+   		padding-bottom: 32%;
+   		width: 32%;
+	}
+	footer {
+	    height: 140px;
+	}
+}

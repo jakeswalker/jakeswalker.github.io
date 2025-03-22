@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="UTF-8" />
+	<meta name="author" content="Jake S. Walker" />
+	<meta name="description" content="A demonstration of desktop and mobile friendly website" />
+	<meta name="keywords" content="responsive, degital, generative, computational, design, graphic, art, web, app, iOS, developer" />
+	<link rel="shortcut icon" type="image/png" href="/favicon.png" />
+	<title>Jake S. Walker - Modal Window</title>
+
+	<link href='https://fonts.googleapis.com/css?family=Monda' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Pirata+One' rel='stylesheet' type='text/css'>
+	<link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+	<link href="styles.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+	<div class="outer">
+		<div class="middle">
+			<div class="inner">
+				<button id="viewImageButton">Click to open the modal window</button>
+			</div>
+		</div>
+	</div>
+
+	<div class="modalWin">
+		<div class="modalWinOuter">
+			<div class="modalWinMiddle">
+				<img class="modalWinInner" src="img/tyler-wanlass-50.jpg" alt="A photo by Tyler Wanlass">
+				<div class="modalWinBG">
+					<p id="closeModalWin"><i class="fa fa-times fa-lg" aria-hidden="true"></i></p>
+				</div>
+				<div class="photographer">
+    				<a href="https://unsplash.com/@unframes">Photo by Tyler Wanlass</a>
+    			</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+	<script src="script.js"></script>
+
+</body>
+
+</html>
