@@ -1,0 +1,78 @@
+body {
+	margin: 0px;
+	font-family: 'Monda', sans-serif;
+}
+.coverImage {
+	z-index: -1;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 85vh;
+	/* image source: https://unsplash.com/@rulasibai */
+	background-image: url("img/rula-sibai-67.jpg");
+
+	/* no background repeat */
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+
+	/* repeat background */
+/*	background-repeat: repeat;
+	background-position: 50% 50%;*/
+}
+.wrapper {
+	margin-top: 85vh;
+	width: 100%;
+}
+section {
+	width: 100%;
+	height: 100vh;
+	background-color: white;
+}
+.evenSection {
+	background-color: rgb(243,243,243);
+}
+h1 {
+	margin: 0px;
+	padding: 0px;
+	line-height: 100vh;
+	text-align: center;
+}
+footer {
+    width: 100%;
+    height: 30px;
+    background-color: rgb(243,243,243);
+}
+.photographer {
+	float: right;
+	margin-right: 20px;
+}
+.photographer a {
+	font-size: 14px;
+	color: rgba(50, 50, 50, 1.0);
+}
+.photographer a:hover, .photographer a:active {
+	color: rgba(50, 50, 50, 0.8);
+}
+
+@media(min-width: 1800px) {
+	.coverImage {
+		/* repeat background */
+		background-size: auto;
+		background-repeat: repeat;
+	}
+}
+@media(max-width: 900px) {
+	.coverImage {
+		height: 30vh;
+	}
+	.wrapper {
+		margin-top: 30vh;
+	}
+	.photographer {
+		margin-right: 15px;
+	}
+	.photographer a {
+		font-size: 12px;
+	}
+}

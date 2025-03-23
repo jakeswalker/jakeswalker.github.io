@@ -1,2 +1,2 @@
-# jakeswalker.github.io
-A GitHub Pages website for showcasing personal projects.
+# Projects
+- [Responsive Web Design](https://jakeswalker.github.io/responsive-web-design/index.html)

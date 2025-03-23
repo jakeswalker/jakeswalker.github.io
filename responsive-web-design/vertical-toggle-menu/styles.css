@@ -1,0 +1,94 @@
+body {
+	margin: 0px;
+	font-family: 'Monda', sans-serif;
+}
+.header {
+	width: 100%;
+	height: 100px;
+	background-color: hsla(240,90%,75%,0.95);
+}
+.navBrand {
+	display: inline-block;
+	float: left;
+	margin-left: 40px;
+}
+.navButton {
+	display: inline-block;
+	float: right;
+	margin-right: 40px;
+	line-height: 100px;
+	background: none;
+	border: none;
+}
+.toggleButton {
+	background: none;
+	border: none;
+	color: white;
+	cursor: pointer;
+	outline: none;
+}
+.brand {
+	font-size: 17px;
+	line-height: 100px;
+	letter-spacing: 3px;
+	color: white;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+.tmContainer {
+	width: 100%;
+}
+.toggleMenu {
+	display: none;
+	background-color: hsla(240,90%,75%,0.95);
+}
+.toggleMenu ul {
+	margin: 0px;
+	padding: 0px;
+}
+.toggleMenu li {
+	list-style-type: none;
+}
+.toggleMenu a {
+	display: inline-block;
+	width: 100%;
+	color: white;
+	letter-spacing: 3px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 17px;
+	line-height: 60px;
+}
+.toggleMenu a:hover, .toggleMenu a:active {
+	color: lightgray;
+	text-decoration: none;
+}
+.toggleMenu span {
+	margin-left: 40px;
+}
+
+@media(max-width: 900px) {
+	.header {
+		height: 70px;
+	}
+	.navBrand {
+		margin-left: 15px;
+	}
+	.navButton {
+		margin-right: 15px;
+		line-height: 70px;
+	}
+	.brand {
+		font-size: 15px;
+		line-height: 66px;
+		letter-spacing: 1px;
+	}
+	.toggleMenu a {
+		letter-spacing: 1px;
+		font-size: 15px;
+		line-height: 50px;
+	}
+	.toggleMenu span {
+		margin-left: 15px;
+	}
+}
